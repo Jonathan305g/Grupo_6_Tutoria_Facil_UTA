@@ -12,11 +12,11 @@ Repositorio oficial de la prueba práctica integradora del primer parcial: dise�
 
 | Integrante | Usuario GitHub | Rol | Rama | Entrega principal |
 | :--- | :--- | :--- | :--- | :--- |
-| Emilio Abril | @usuario-emilio | Analista de interacción y evaluación | `feature/emilio-matriz-evaluacion` | `docs/01_matriz_ihc.pdf`, `evaluacion/prueba_iteracion.md` |
-| Manuel Cusme | @usuario-manuel | Usabilidad y accesibilidad | `feature/manuel-usabilidad-pour` | `docs/02_usabilidad_accesibilidad.pdf` |
+| Emilio Abril | @EMILIOABRIL05 | Analista de interacción y evaluación | `feature/emilio-matriz-evaluacion` | `docs/01_matriz_ihc.pdf`, `evaluacion/prueba_iteracion.md` |
+| Manuel Cusme | @ManuelCusme | Usabilidad y accesibilidad | `feature/manuel-usabilidad-pour` | `docs/02_usabilidad_accesibilidad.pdf` |
 | Jonathan Gamboa | @Jonathan305g | Analista DCU y documentación | `feature/jonathan-dcu-readme` | `docs/03_dcu_contexto.pdf`, `README.md` |
-| Pablo Lozada | @usuario-pablo | Decisiones de diseño y guía de estilo | `feature/pablo-decisiones-guia` | `docs/04_decisiones_diseno.pdf` |
-| William Martínez | @usuario-william | Prototipado | `feature/william-prototipo` | `prototipo/` (capturas y enlace) |
+| Pablo Lozada | @idk.Damian | Decisiones de diseño y guía de estilo | `feature/pablo-decisiones-guia` | `docs/04_decisiones_diseno.pdf` |
+| William Martínez | @william-martinez5101 | Prototipado | `feature/william-prototipo` | `prototipo/` (capturas y enlace)|
 
 > La asignación de un rol no limita la colaboración: todos los integrantes tienen issue, rama, commits y pull request propios.
 
