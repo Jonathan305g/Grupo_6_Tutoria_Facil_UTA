@@ -35,3 +35,71 @@ El prototipo aplica principios de la Psicología de la Gestalt para organizar la
 ### 3. Ley de Figura-Fondo
 - **Aplicación:** El diseño emplea un fondo neutro (pantalla en blanco `#FFFFFF` sobre marco contenedor `#F1F5F9`), tarjetas delimitadas con bordes `#64748B` o `#E2E8F0`, y botones de acción primaria en azul `#1D4ED8` de alto contraste.
 - **Justificación:** Esta diferenciación cromática y de bordes establece una jerarquía clara donde los elementos interactivos primarios y la información relevante (figura) resaltan visiblemente sobre la superficie neutra de trabajo (fondo), reduciendo el tiempo de búsqueda visual.
+
+---
+
+## 3. Guía de Estilo Visual y Sistema de Diseño
+
+Para garantizar la coherencia técnica y estética entre las maquetas de Figma y la implementación web, se definen los siguientes tokens y especificaciones:
+
+### 3.1. Tipografía
+
+Se adopta la fuente tipográfica **Inter** (Google Fonts) por su alta legibilidad en pantallas móviles de diversas resoluciones.
+
+| Nivel / Rol | Fuente | Tamaño (`font-size`) | Altura de Línea (`line-height`) | Peso (`font-weight`) | Uso en Interfaz |
+|---|---|---|---|---|---|
+| **Título Principal (H1)** | Inter | `24 px` | `32 px` | Bold (`700`) | Encabezados principales de pantalla |
+| **Subtítulo (H2)** | Inter | `18 px` | `24 px` | Semi-Bold (`600`) | Secciones secundarias y modales |
+| **Cuerpo de Texto (Body)** | Inter | `16 px` | `22 px` | Regular (`400`) | Párrafos descriptivos e instrucciones |
+| **Texto Auxiliar / Labels** | Inter | `14 px` | `20 px` | Semi-Bold (`600`) / Medium (`500`) | Etiquetas, badges, leyendas y captions (`#64748B`) |
+
+---
+
+### 3.2. Paleta de Colores
+
+Los colores han sido seleccionados bajo criterios de accesibilidad (contraste WCAG AA) y significado cromático claro:
+
+| Rol de Color | Código Hexadecimal | Muestra | Descripción y Aplicación |
+|---|---|---|---|
+| **Fondo Base** | `#FFFFFF` | ⚪ Blanco | Fondo principal de las pantallas del dispositivo |
+| **Fondo Lienzo/Marco** | `#F1F5F9` | 🩶 Gris Claro | Fondo de integración exterior del prototipo |
+| **Texto Principal** | `#111827` | ⬛ Negro Tintado | Títulos, valores de resumen y texto destacado |
+| **Texto Secundario** | `#374151` | 🩶 Gris Oscuro | Cuerpo de texto y descripciones |
+| **Texto Auxiliar / Caption** | `#64748B` | 🩶 Gris Medio | Subtítulos, horas deshabilitadas y bordes neutros |
+| **Acción Primaria / Énfasis** | `#1D4ED8` | 🟦 Azul UTA | Botones principales, selecciones activas y bordes destacados |
+| **Fondo Éxito** | `#F0FDF4` | 🟩 Verde Claro | Fondo de alertas y badges de confirmación |
+| **Texto/Borde Éxito** | `#166534` / `#86EFAC` | 🟩 Verde Oscuro | Indicadores de cita confirmada o slot disponible |
+| **Fondo Error / Ocupado** | `#FEF2F2` | 🟥 Rojo Claro | Fondo de alertas de error y horarios deshabilitados |
+| **Texto/Borde Error** | `#991B1B` / `#FCA5A5` | 🟥 Rojo Oscuro | Indicador de franja horaria ocupada o fallo |
+
+---
+
+### 3.3. Componentes y Consistencia Visual
+
+Todos los componentes reutilizables garantizan un área táctil adecuada (cumpliendo la pauta de área de toque mínima de **44 px** para dispositivos móviles):
+
+1. **Botones Primarios (`.btn-primary`):**
+   - Altura mínima: `48 px` (supera el estándar de 44 px).
+   - Fondo: `#1D4ED8`, Texto: `#FFFFFF` (peso 600).
+   - Bordes redondeados: `border-radius: 8px`.
+
+2. **Botones Secundarios (`.btn-secondary`):**
+   - Altura mínima: `48 px`.
+   - Fondo: `#FFFFFF`, Texto y Borde: `#1D4ED8` (`1.5px solid`).
+   - Variante de reprogramación: Borde punteado `border-style: dashed`.
+
+3. **Tarjetas de Cita y Resumen (`.card`):**
+   - Fondo: `#FFFFFF`, Borde: `1px solid #64748B`, Radio de esquina: `12 px`.
+   - Relleno interno (*padding*): `16 px`.
+   - Filas detalladas (`.detail-row`) divididas por líneas discontinuas `#E2E8F0`.
+
+4. **Selectores de Horario (`.slot-item`):**
+   - Altura mínima: `52 px`.
+   - Estados:
+     - *Disponible:* Borde `#64748B`, fondo `#FFFFFF`.
+     - *Seleccionado:* Borde `2px solid #1D4ED8`, fondo `#EFF6FF`.
+     - *Ocupado/Deshabilitado:* Borde `#CBD5E1`, fondo `#F1F5F9`, opacidad `0.6`, cursor `not-allowed`.
+
+5. **Badges e Indicadores de Estado (`.badge-success` / `.badge-error`):**
+   - Relleno interior: `4px 8px`, `border-radius: 4px`, tamaño de fuente: `14 px`.
+   - Proporcionan feedback inmediato sin depender exclusivamente del color.
